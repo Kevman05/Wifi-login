@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wi-Fi Login and Payment</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f1f1f1;
+            }
+
+            .container {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .container h2 {
+                text-align: center;
+            }
+
+            .container
+            input[type="text"],
+            .container
+            input[type="password"],
+            .container
+            input[type="submit"] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: 
+                inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            .container
+            input[type="submit"]:hover
+            {
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Login and Payment</h2>
+            <form action="/login" method="post">
+                <label for="username">username:</label>
+                <input type="text" id="username"
+                name="username" required>
+                <label for="password">Password:</label>
+                <input
+                type="password"
+                id="password"
+                name="password" required>
+                <label
+                for="payment">Payment
+            Information:</label>
+            <input type="text"
+            id="payment" name="payment"
+            required>
+            <input type="submit"
+            value="Connect and Pay">
+            </form>
+        </div>
+    </body>
+</html>
